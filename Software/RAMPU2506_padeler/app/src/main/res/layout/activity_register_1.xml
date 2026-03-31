@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/authentication_background">
+
+
+    <ImageView
+        android:id="@+id/imgARegProfile"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="108dp"
+        android:contentDescription="@string/imgARegProfile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ImageContrastCheck"
+        android:src="@drawable/ic_profile_placeholder"
+        android:clickable="true"
+        android:focusable="true"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/tvARegSurname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:labelFor="@id/etARegSurname"
+        android:text="@string/tvARegSurname"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/etARegSurname"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.298"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etARegName"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/tvARegProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="4dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:text="@string/tvARegProfile"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgARegProfile" />
+
+    <Spinner
+        android:id="@+id/spnARegGender"
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="44dp"
+        android:background="@color/lightRed"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etARegSurname" />
+
+    <EditText
+        android:id="@+id/etARegDateOfBirth"
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="44dp"
+        android:autofillHints="dateOfBirth"
+        android:ems="10"
+        android:hint="@string/etARegDateOfBirth"
+        android:inputType="date"
+        android:textColorHint="@color/grey"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spnARegGender" />
+
+    <TextView
+        android:id="@+id/tvARegGender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/tvARegGender"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/spnARegGender"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.327"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etARegSurname"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/tvADateOfBirth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/tvADateOfBirth"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/etARegDateOfBirth"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.318"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spnARegGender"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/etARegName"
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="4dp"
+        android:autofillHints="name"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/white"
+        android:ems="10"
+        android:hint="@string/etARegName"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/grey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvARegProfile" />
+
+    <TextView
+        android:id="@+id/tvARegName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:labelFor="@id/etARegName"
+        android:text="@string/tvAName"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/etARegName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.283"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/etARegSurname"
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="44dp"
+        android:autofillHints="surname"
+        android:textColor="@color/white"
+        android:ems="10"
+        android:hint="@string/etARegSurname"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/grey"
+        android:backgroundTint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etARegName" />
+
+    <Button
+        android:id="@+id/btnARegNext1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/black"
+        android:textColor="@color/white"
+        android:text="@string/btnARegNext"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etARegDateOfBirth"
+        app:layout_constraintVertical_bias="0.363" />
+
+    <ProgressBar
+        android:id="@+id/pbAReg1"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="371dp"
+        android:layout_height="11dp"
+        android:layout_marginTop="16dp"
+        android:max="100"
+        android:progress="33"
+        android:progressBackgroundTint="@color/white"
+        android:progressTint="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/imgARegProfile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tvARegTitle1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="48dp"
+        android:text="@string/tvARegTitle1"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/imgARegProfile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.121"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pbAReg1"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

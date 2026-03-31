@@ -1,0 +1,138 @@
+<resources>
+    <string name="app_name">RAMPU2506_padeler</string>
+    <string name="btEPSave">Save</string>
+    <string name="btnEPLogout">Logout</string>
+    <string name="txtEPName">Name:</string>
+    <string name="txtEPSurname">Surname:</string>
+    <string name="txtEPUsername">Username:</string>
+    <string name="txtEPPassword">Password:</string>
+    <string name="etEPName">name</string>
+    <string name="etEPSurname">surname</string>
+    <string name="etEPUsername">username</string>
+    <string name="etEPPassword">password</string>
+    <string name="imgEPProfile">User profile picture</string>
+    <string name="etEPEmail">email</string>
+    <string name="txtEPEmail">Email:</string>
+    <string name="txtEPGender">Gender:</string>
+    <string name="txtEPFrequency">Frequency:</string>
+    <string name="txtEPLevel">Level:</string>
+    <string name="txtEPPosition">Position:</string>
+    <string name="txtEPDateOfBirth">Date of birth:</string>
+    <string name="txtEPEditPicture">Edit picture</string>
+    <string name="etEPDateOfBirth">dateOfBirth</string>
+    <string-array name="gender_options">
+        <item>Select gender</item>
+        <item>Male</item>
+        <item>Female</item>
+        <item>Other</item>
+    </string-array>
+    <string-array name="frequency_options">
+        <item>Select frequency</item>
+        <item>Daily</item>
+        <item>Weekly</item>
+        <item>Monthly</item>
+    </string-array>
+    <string-array name="position_options">
+        <item>Select position</item>
+        <item>Right</item>
+        <item>Left</item>
+    </string-array>
+    <string-array name="level_options">
+        <item>Select Level</item>
+        <item>Beginner</item>
+        <item>Lower intermediate</item>
+        <item>Intermediate</item>
+        <item>Advanced</item>
+        <item>Professional</item>
+    </string-array>
+    <string name="tvAUser">Username:</string>
+    <string name="etAUser">username</string>
+    <string name="tvAPassword">Password:</string>
+    <string name="etAPassword">password</string>
+    <string name="btnALogin">Login</string>
+    <string name="tvANoAcc">I don\'t have an account</string>
+    <string name="imgLogo">Padeler logo</string>
+    <string name="etARegName">Name\n</string>
+    <string name="tvARegSurname">Surname:</string>
+    <string name="etARegSurname">Surname</string>
+    <string name="tvAName">Name:</string>
+    <string name="tvARegGender">Select gender:</string>
+    <string name="etARegDateOfBirth">Date of birth</string>
+    <string name="tvADateOfBirth">Date of birth:</string>
+    <string name="tvARegProfile">Edit profile picture</string>
+    <string name="btnARegNext">Next</string>
+    <string name="imgARegProfile">Profile picture</string>
+    <string name="tvARegUsername">Username:</string>
+    <string name="etARegUsername">Username</string>
+    <string name="tvARegPassword">Password:</string>
+    <string name="etARegPassword">Password</string>
+    <string name="tvARegEmail">Email:</string>
+    <string name="etARegEmail">Email</string>
+    <string name="tvARegTitle1"><u>Personal info</u></string>
+    <string name="tvARegTitle2"><u>Login data</u></string>
+    <string name="tvARegTitle3"><u>Level of play</u></string>
+    <string name="tvARegFrequency">Frequency of playing:</string>
+    <string name="tvARegLevel">Level:</string>
+    <string name="tvARegPosition">Position:</string>
+    <string name="btnARegFinish">Finish</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tvARegPhoneNumber">Phone number:</string>
+    <string name="etARegPhoneNumber">Phone number</string>
+    <string name="more">More</string>
+    <string name="home">Home</string>
+    <string name="match">Match</string>
+    <string name="match_screen">Match screen</string>
+    <string name="home_screen">Home screen</string>
+    <string name="more_screen">More screen</string>
+    <string name="profile_image">Profile image</string>
+    <string name="profile">Profile</string>
+    <string name="send_feedback">Send feedback</string>
+    <string name="about_padeler">About Padeler</string>
+    <string name="settings">Settings</string>
+    <string name="logout">Logout</string>
+    <string name="korisnik">Korisnik</string>
+    <string name="filter">Filter</string>
+    <string name="_23_godina">23 godina</string>
+    <string name="_1_2_km">1.2 km</string>
+    <string name="ime_i_prezime">Ime i prezime</string>
+    <string name="amaterski_level_igranja">Amaterski level igranja</string>
+    <string name="_2_puta_tjedno">2 puta tjedno</string>
+    <string name="desno">Desno</string>
+    <string name="like">Like</string>
+    <string name="prika_i_dodatne_informacije">Prikaži dodatne informacije</string>
+    <string name="dislike">Dislike</string>
+    <string name="format_godine">%1$d years old</string>
+    <string name="format_udaljenost">%1$.1f km</string>
+    <string name="Ime_prezime">%1$s %2$s</string>
+    <string name="about_player">About player</string>
+    <string name="level_of_play">Level of play:</string>
+    <string name="frequency">Frequency:</string>
+    <string name="position">Position:</string>
+    <string name="txtEPPhone">Phone number:</string>
+    <string name="etEPPhone">Phone number</string>
+    <string name="format_km">%.1f km</string>
+    <string name="Match">MATCH!</string>
+    <string name="dogodio_se_match">Dogodio se MATCH!</string>
+    <string name="pogledaj_match_tab">Pogledaj Match tab.</string>
+    <string name="it_s_a_match">IT\'S A MATCH!</string>
+    <string name="look_your_match_tab">Look your Match Tab.</string>
+    <string name="radius_km">Radius (km)</string>
+    <string name="radius_value">%d km</string>
+    <string name="radius_default">10 km</string>
+    <string name="move_the_slider">Move the slider to select the distance.</string>
+    <string name="apply">Apply</string>
+    <string name="whatsapp">WhatsApp</string>
+    <string name="no_matches">No matches.</string>
+    <string name="matches">Matches</string>
+    <string name="grade_player">Grade player</string>
+    <string name="comment">Comment (optional)</string>
+    <string name="send">Send</string>
+    <string name="rate">Rate</string>
+    <string name="report_user">Report user</string>
+    <string name="report_description">Report description</string>
+    <string name="report_reason_hint">Report reason hint</string>
+    <string name="report_sent">Report sent</string>
+    <string name="report_failed">Report failed</string>
+    <string name="gender">Gender:</string>
+    <string name="delete_profile">Delete profile</string>
+</resources>

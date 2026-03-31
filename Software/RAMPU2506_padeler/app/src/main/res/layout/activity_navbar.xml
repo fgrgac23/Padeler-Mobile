@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/motionLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    app:layoutDescription="@xml/navbar_animation">
+
+    <LinearLayout
+        android:id="@+id/bottomBar"
+        android:layout_width="0dp"
+        android:layout_height="88dp"
+        android:background="@color/ui_color"
+        android:baselineAligned="false"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        android:weightSum="3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:id="@+id/tabMatchContainer"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal|bottom"
+            android:orientation="vertical"
+            android:paddingTop="0dp"
+            android:paddingBottom="4dp">
+
+            <ImageView
+                android:id="@+id/tabMatch"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginBottom="2dp"
+                android:clickable="true"
+                android:contentDescription="@string/match"
+                android:focusable="true"
+                android:src="@drawable/favorite"
+                app:tint="@color/white" />
+
+            <TextView
+                android:id="@+id/textMatch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/match"
+                android:textColor="#FFFFFF"
+                android:textSize="13sp"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tabSwipeContainer"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal|bottom"
+            android:orientation="vertical"
+            android:paddingTop="0dp"
+            android:paddingBottom="4dp">
+
+            <ImageView
+                android:id="@+id/tabSwipe"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="2dp"
+                android:clickable="true"
+                android:contentDescription="@string/home"
+                android:focusable="true"
+                android:src="@drawable/home"
+                app:tint="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/textSwipe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/home"
+                android:textColor="#FFFFFF"
+                android:textSize="13sp"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tabMoreContainer"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal|bottom"
+            android:orientation="vertical"
+            android:paddingTop="0dp"
+            android:paddingBottom="4dp">
+
+            <ImageView
+                android:id="@+id/tabMore"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginBottom="2dp"
+                android:clickable="true"
+                android:contentDescription="@string/more"
+                android:focusable="true"
+                android:src="@drawable/menu"
+                app:tint="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/textMore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/more"
+                android:textColor="#FFFFFF"
+                android:textSize="13sp"
+                android:visibility="invisible" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/bottomBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+    </androidx.viewpager2.widget.ViewPager2>
+
+    <FrameLayout
+        android:id="@+id/fragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:elevation="10dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

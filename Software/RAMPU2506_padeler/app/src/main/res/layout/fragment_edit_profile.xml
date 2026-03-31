@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="50dp"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.6"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgEPProfile">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtEPName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:labelFor="@id/etEPName"
+                android:text="@string/txtEPName"
+                android:textColor="@color/text_color" />
+
+            <EditText
+                android:id="@+id/etEPName"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:autofillHints="name"
+                android:inputType="text"
+                android:text="@string/etEPName"
+                android:textColor="@color/text_color" />
+
+            <TextView
+                android:id="@+id/txtEPSurname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:labelFor="@id/etEPSurname"
+                android:text="@string/txtEPSurname"
+                android:textColor="@color/text_color" />
+
+            <EditText
+                android:id="@+id/etEPSurname"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:autofillHints="surname"
+                android:inputType="text"
+                android:text="@string/etEPSurname"
+                android:textColor="@color/text_color" />
+
+            <TextView
+                android:id="@+id/txtEPDateOfBirth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:labelFor="@id/etEPDateOfBirth"
+                android:text="@string/txtEPDateOfBirth"
+                android:textColor="@color/text_color" />
+
+            <EditText
+                android:id="@+id/etEPDateOfBirth"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:autofillHints="dateOfBirth"
+                android:inputType="date"
+                android:text="@string/etEPDateOfBirth"
+                android:textColor="@color/text_color" />
+
+            <TextView
+                android:id="@+id/txtEPUsername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:labelFor="@id/etEPUsername"
+                android:text="@string/txtEPUsername"
+                android:textColor="@color/text_color" />
+
+            <EditText
+                android:id="@+id/etEPUsername"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:autofillHints="username"
+                android:inputType="text"
+                android:text="@string/etEPUsername"
+                android:textColor="@color/text_color" />
+
+            <TextView
+                android:id="@+id/txtEPPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:labelFor="@id/etEPPassword"
+                android:text="@string/txtEPPassword"
+                android:textColor="@color/text_color" />
+
+            <EditText
+                android:id="@+id/etEPPassword"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:autofillHints="password"
+                android:inputType="textPassword"
+                android:text="@string/etEPPassword"
+                android:textColor="@color/text_color" />
+
+            <TextView
+                android:id="@+id/txtEPEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:labelFor="@id/etEPEmail"
+                android:text="@string/txtEPEmail"
+                android:textColor="@color/text_color" />
+
+            <EditText
+                android:id="@+id/etEPEmail"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:autofillHints="emailAddress"
+                android:inputType="textEmailAddress"
+                android:text="@string/etEPEmail"
+                android:textColor="@color/text_color" />
+
+            <TextView
+                android:id="@+id/txtEPPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:labelFor="@id/etEPPhone"
+                android:text="@string/txtEPPhone" />
+
+            <EditText
+                android:id="@+id/etEPPhone"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:autofillHints="phone"
+                android:inputType="phone"
+                android:text="@string/etEPPhone" />
+
+            <TextView
+                android:id="@+id/txtEPGender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:labelFor="@id/spnEPGender"
+                android:text="@string/txtEPGender"
+                android:textColor="@color/text_color" />
+
+            <Spinner
+                android:id="@+id/spnEPGender"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:textColor="@color/text_color" />
+
+            <TextView
+                android:id="@+id/txtEPFrequency"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:labelFor="@id/spnEPFrequency"
+                android:text="@string/txtEPFrequency"
+                android:textColor="@color/text_color" />
+
+            <Spinner
+                android:id="@+id/spnEPFrequency"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:textColor="@color/text_color" />
+
+            <TextView
+                android:id="@+id/txtEPLevel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:labelFor="@id/spnEPLevel"
+                android:text="@string/txtEPLevel"
+                android:textColor="@color/text_color" />
+
+            <Spinner
+                android:id="@+id/spnEPLevel"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:textColor="@color/text_color" />
+
+            <TextView
+                android:id="@+id/txtEPPosition"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:labelFor="@id/spnEPLevel"
+                android:text="@string/txtEPPosition"
+                android:textColor="@color/text_color" />
+
+            <Spinner
+                android:id="@+id/spnEPPosition"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:textColor="@color/text_color" />
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnEPSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/ui_color"
+        android:text="@string/btEPSave"
+        android:textColor="@color/text_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.981" />
+
+    <ImageButton
+        android:id="@+id/imgEPProfile"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="@string/imgEPProfile"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.2"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.085"
+        android:scaleType="fitCenter"
+        app:layout_constraintDimensionRatio="1:1"
+        android:src="@color/black"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <ConstraintSet android:id="@+id/homeActive" />
+    <ConstraintSet android:id="@+id/matchActive" />
+    <ConstraintSet android:id="@+id/moreActive" />
+
+    <Transition
+        motion:constraintSetStart="@id/homeActive"
+        motion:constraintSetEnd="@id/matchActive"
+        motion:duration="300"
+        motion:motionInterpolator="easeInOut" />
+    <Transition
+        motion:constraintSetStart="@id/matchActive"
+        motion:constraintSetEnd="@id/homeActive"
+        motion:duration="300"
+        motion:motionInterpolator="easeInOut" />
+
+    <Transition
+        motion:constraintSetStart="@id/homeActive"
+        motion:constraintSetEnd="@id/moreActive"
+        motion:duration="300"
+        motion:motionInterpolator="easeInOut" />
+    <Transition
+        motion:constraintSetStart="@id/moreActive"
+        motion:constraintSetEnd="@id/homeActive"
+        motion:duration="300"
+        motion:motionInterpolator="easeInOut" />
+
+    <Transition
+        motion:constraintSetStart="@id/matchActive"
+        motion:constraintSetEnd="@id/moreActive"
+        motion:duration="300"
+        motion:motionInterpolator="easeInOut" />
+    <Transition
+        motion:constraintSetStart="@id/moreActive"
+        motion:constraintSetEnd="@id/matchActive"
+        motion:duration="300"
+        motion:motionInterpolator="easeInOut" />
+</MotionScene>

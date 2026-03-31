@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="authentication_background">#982B3B</color>
+    <color name="grey">#CAC7C7</color>
+    <color name="lightRed">#C84A5B</color>
+    <color name="darkRed">#6B1E2A</color>
+    <color name="background_color">#D6D6D6</color>
+    <color name="ui_color">#E50914</color>
+    <color name="text_color">#000000</color>
+    <color name="like_color">#00E676</color>
+    <color name="ui_color_transparent">#CCC62828</color>
+</resources>
