@@ -5,8 +5,8 @@
 Ime i prezime | E-mail adresa (FOI) | JMBAG | Github korisničko ime | Seminarska grupa
 ------------  | ------------------- | ----- | --------------------- | ----------------
 Filip Grgac | fgrgac23@foi.hr | 0016167082 | fgrgac23 | G01
-Karlo Kršak | kkrsak23@foi.hr | 0016165894 | kkrsak23 | G01
-Kristian Katulić | kkatulic23@foi.hr | 0016168011 | kkatulic23 | G01
+Karlo Kršak |  |  | kkrsak23 | G01
+Kristian Katulić |  |  | kkatulic23 | G01
 
 ## Opis domene
 Softversko rješenje za pronalazak partnera za padel.
